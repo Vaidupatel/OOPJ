@@ -7,8 +7,8 @@ class B extends A {
 
     void show(int a) {
         System.out.println(a);            //print the value of a, wich is given by argument in method call.
-        System.out.println(this.a);       //print the value of a, wich is in current class because of "this" keyword.
-        System.out.println(super.a);      //print the value of a, wich is in parent class because of "super" keyword
+        System.out.println(this.a);       //print the value of a, wich is in current class because of "this" keyword it's refer to the current class instance variable.
+        System.out.println(super.a);      //print the value of a, wich is in parent class because of "super" keyword it's refer to the parent class instance variable. 
     }
 
     public static void main(String args[]) {

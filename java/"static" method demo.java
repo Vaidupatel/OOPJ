@@ -25,3 +25,15 @@ class xyz {
     }
 
 }
+
+
+/*Static method can only access static data, can't access non-static data i.e, instance data*/
+class thisdemo
+{
+    int i=10;
+    static void display()
+    {
+        System.out.println(i);          //it gives an error
+    }
+    
+}

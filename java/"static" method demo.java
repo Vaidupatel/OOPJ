@@ -45,7 +45,7 @@ class thisdemo {
     static int i = 10;
 
     static void display() {
-        show();
+        show();                                               // it gives an erro              
         System.out.println("static method");
     }
 

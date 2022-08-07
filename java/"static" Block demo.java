@@ -9,4 +9,7 @@ class demo {
     static {
         System.out.println("hello world!");
     }
+    static {
+        System.out.println("2nd static block");
+    }
 }

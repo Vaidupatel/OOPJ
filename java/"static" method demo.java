@@ -55,3 +55,29 @@ class thisdemo {
     }
 
 }
+
+
+/*A static method can't be refer to "this" or "super" keyword in memory in anyway*/
+class demo {
+    int i = 10;
+
+    static void display() {
+        System.out.println(i);
+
+    }
+}
+
+class test extends demo {
+    void print() {
+        super.display();
+        System.out.println(super.i);
+
+    }
+
+    public static void main(String[] args) {
+        test t = new test();
+        t.print();
+
+    }
+}
+

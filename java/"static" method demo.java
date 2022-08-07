@@ -31,9 +31,27 @@ class xyz {
 class thisdemo
 {
     int i=10;
-    static void display()
+    static void display()               // We have to creat static data to access i static methods, heare static int i=10;
     {
         System.out.println(i);          //it gives an error
     }
     
+}
+
+
+
+/*A static method can call only other static method, can't calll a non-static method*/
+class thisdemo {
+    static int i = 10;
+
+    static void display() {
+        show();
+        System.out.println("static method");
+    }
+
+    void show() {
+        System.out.println("no-method");
+
+    }
+
 }

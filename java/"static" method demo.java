@@ -11,8 +11,17 @@ class demo {
     }
 
     public static void main(String args[]) {
-        demo d = new demo();
+        demo d = new demo();    //we have to create object becaus ewe calling the non-static method
         d.display();
-        demo.print();
+        demo.print();           //print();   /*both are same */
+        xyz.put();              // heare we can't write put(); because it's outer class method 
     }
+}
+class xyz {
+
+    static void put() {
+        System.out.println("outer class method with static");
+
+    }
+
 }
